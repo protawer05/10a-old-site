@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/background.jpg);
+    color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+}
+.wrapper{
+    max-width: 822px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__title{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timetable__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.timetable__item {
+    min-width: 264px;
+}
+.item__title {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: rgb(172, 48, 48);
+}
+.item__title-zvonki{
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: rgb(0, 255, 119);
+}
+.item__column {
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 50px;
+}
+.column__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 392px;
+}
+@media(max-width: 852px){
+    .timetable__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .timetable__item{
+        min-width: 500px;
+        padding-bottom: 25px;
+    }
+}
+@media(max-width: 555px){
+    .timetable__item{
+        min-width: 300px;
+    }
+}
+.list__item {
+    font-size: 24px;
+    line-height: 33px;
+}
+.list__item:first-child{
+    padding-top: 25px;
+}
+.list__item:not(last-child){
+    margin-bottom: 18px;
+}
+.list__item:last-child{
+    padding-bottom: 10px;
+}
+.green{
+    color:rgb(116, 200, 5);
+}
+.red{
+    color: red;
+}
+.lesson{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 40px;
+    color: rgb(192, 19, 19);
+}
