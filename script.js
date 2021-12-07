@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () =>{
           zvonki = document.querySelectorAll('.zvonki'),
           lesson = document.querySelector('.lesson'),
           columns = document.querySelectorAll('.item__column');
+
     function boxShadow(){
         if (day == 1){
             columns[1].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';

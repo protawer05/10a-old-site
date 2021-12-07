@@ -19,6 +19,10 @@ body{
     line-height: 65px;
     text-align: center;
     margin-bottom: 50px;
+    border: 10px dashed white;
+    border-radius: 32px;
+    border-bottom: 3px solid white;
+    
 }
 
 .timetable__top {
@@ -69,6 +73,11 @@ body{
         min-width: 300px;
     }
 }
+@media (max-width: 630px){
+    .header__title{
+        font-size: 30px;
+    }
+}
 .list__item {
     font-size: 24px;
     line-height: 33px;
@@ -87,13 +96,16 @@ body{
 }
 .red{
     color: red;
+    border: 1px solid red;
+    border-radius: 10px;
 }
 .lesson{
     text-align: center;
     font-size: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
     color: rgb(192, 19, 19);
-    border-bottom: 3px solid black;
+    border-bottom: 3px dashed rgba(10, 189, 202, 0.384);
 }
 .italic{
     font-style: italic;
