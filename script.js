@@ -12,12 +12,29 @@ window.addEventListener('DOMContentLoaded', () =>{
           thursday = document.querySelectorAll('.thursday'),
           friday = document.querySelectorAll('.friday'),
           zvonki = document.querySelectorAll('.zvonki'),
-          lesson = document.querySelector('.lesson');
-
+          lesson = document.querySelector('.lesson'),
+          columns = document.querySelectorAll('.item__column');
+    function boxShadow(){
+        if (day == 1){
+            columns[1].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+        }
+        if (day == 2){
+            columns[2].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+        }
+        if (day == 3){
+            columns[3].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+        }
+        if (day == 4){
+            columns[4].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+        }
+        if (day == 5){
+            columns[5].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+        }
+    }
     function changeTimeColor() {
         if (day != 6 && day != 0) {
             if (day == 1){
-                title[0].classList.add('green');
+                title[0].classList.add('green', 'italic');
                 if (hours == 8 && minute >= 0 && minute < 40 ){
                     monday[0].classList.add('green');
                 }
@@ -38,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 }
             }
             if (day == 2){
-                title[1].classList.add('green');
+                title[1].classList.add('green', 'italic');
                 if (hours == 8 && minute >= 0 && minute < 40 ){
                     tuesday[0].classList.add('green');
                 }
@@ -62,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 }
             }
             if (day == 3){
-                title[2].classList.add('green');
+                title[2].classList.add('green', 'italic');
                 
             if (hours == 8 && minute >= 0 && minute < 40 ){
                 wednesday[0].classList.add('green');
@@ -84,7 +101,7 @@ window.addEventListener('DOMContentLoaded', () =>{
             }
             }
             if (day == 4){
-                title[3].classList.add('green');
+                title[3].classList.add('green','italic');
                 if (hours == 8 && minute >= 0 && minute < 40 ){
                     thursday[0].classList.add('green');
                 }
@@ -108,7 +125,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 }
             }
             if (day == 5){
-                title[4].classList.add('green');
+                title[4].classList.add('green','italic');
                 if (hours == 8 && minute >= 0 && minute < 40 ){
                     friday[0].classList.add('green');
                 }
@@ -181,13 +198,14 @@ window.addEventListener('DOMContentLoaded', () =>{
                 lesson.textContent = 'Сейчас перемена';
             }
             if (hours == 13 && minute >= 40 || hours >= 14 && minute >= 0 || hours < 8){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = '#008B8B';
+                lesson.textContent = 'Внешкольное время';
             }
         }
     }
     changeLessonStatus();
     changeTimeColor();
+    boxShadow();
 });
 
 

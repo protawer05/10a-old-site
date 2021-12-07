@@ -93,4 +93,9 @@ body{
     font-size: 40px;
     padding-bottom: 40px;
     color: rgb(192, 19, 19);
+    border-bottom: 3px solid black;
+}
+.italic{
+    font-style: italic;
+    
 }
