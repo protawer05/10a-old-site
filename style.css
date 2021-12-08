@@ -93,6 +93,8 @@ body{
 }
 .green{
     color:rgb(116, 200, 5);
+    border: 1px solid green;
+    border-radius: 10px;
 }
 .red{
     color: red;

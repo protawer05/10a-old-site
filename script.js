@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
                     monday[4].classList.add('green');
                 }
-                if (hours == 12 && minute >= 10 || hours == 12 && minute < 50 ){
+                if (hours == 12 && minute >= 10 && minute < 50 ){
                     monday[5].classList.add('green');
                 }
             }
@@ -72,10 +72,10 @@ window.addEventListener('DOMContentLoaded', () =>{
                 if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
                     tuesday[4].classList.add('green');
                 }
-                if (hours == 12 && minute >= 10 || hours == 12 && minute < 50 ){
+                if (hours == 12 && minute >= 10 && minute < 50 ){
                     tuesday[5].classList.add('green');
                 }
-                if (hours == 13 && minute >= 0 || hours == 13 && minute < 40 ){
+                if (hours == 13 && minute >= 0 && minute < 40 ){
                     tuesday[6].classList.add('green');
                 }
             }
@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () =>{
             if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
                 wednesday[4].classList.add('green');
             }
-            if (hours == 12 && minute >= 10 || hours == 12 && minute < 50 ){
+            if (hours == 12 && minute >= 10 && minute < 50 ){
                 wednesday[5].classList.add('green');
             }
             }
@@ -118,10 +118,10 @@ window.addEventListener('DOMContentLoaded', () =>{
                 if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
                     thursday[4].classList.add('green');
                 }
-                if (hours == 12 && minute >= 10 || hours == 12 && minute < 50 ){
+                if (hours == 12 && minute >= 10 && minute < 50 ){
                     thursday[5].classList.add('green');
                 }
-                if (hours == 13 && minute >= 0 || hours == 13 && minute < 40 ){
+                if (hours == 13 && minute >= 0 && minute < 40 ){
                     thursday[6].classList.add('green');
                 }
             }
@@ -142,7 +142,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
                     friday[4].classList.add('green');
                 }
-                if (hours == 12 && minute >= 10 || hours == 12 && minute < 50 ){
+                if (hours == 12 && minute >= 10 && minute < 50 ){
                     friday[5].classList.add('green');
                 }
             }
