@@ -17,19 +17,19 @@ window.addEventListener('DOMContentLoaded', () =>{
 
     function boxShadow(){
         if (day == 1){
-            columns[1].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+            columns[1].style.boxShadow ='1px 3px 3px 4px #98FF98';
         }
         if (day == 2){
-            columns[2].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+            columns[2].style.boxShadow ='1px 3px 3px 4px #98FF98';
         }
         if (day == 3){
-            columns[3].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+            columns[3].style.boxShadow ='1px 3px 3px 4px #98FF98';
         }
         if (day == 4){
-            columns[4].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+            columns[4].style.boxShadow ='1px 3px 3px 4px #98FF98';
         }
         if (day == 5){
-            columns[5].style.boxShadow ='5px 5px rgba(21, 25, 67, 0.65)';
+            columns[5].style.boxShadow ='1px 3px 3px 4px #98FF98';
         }
     }
     function changeTimeColor() {
@@ -208,5 +208,6 @@ window.addEventListener('DOMContentLoaded', () =>{
     changeTimeColor();
     boxShadow();
 });
+
 
 
