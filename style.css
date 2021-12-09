@@ -22,7 +22,6 @@ body{
     border: 10px dashed white;
     border-radius: 32px;
     border-bottom: 3px solid white;
-    
 }
 
 .timetable__top {
@@ -38,6 +37,7 @@ body{
     line-height: 49px;
     text-align: center;
     color: rgb(172, 48, 48);
+    position: relative;
 }
 .item__title-zvonki{
     font-size: 36px;
@@ -68,6 +68,15 @@ body{
         min-width: 500px;
         padding-bottom: 25px;
     }
+}
+.nextDay::before{
+    content: 'Завтра';
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    font-size: 13px;
+    color: rgba(11, 21, 167, 0.76);
 }
 @media(max-width: 555px){
     .timetable__item{

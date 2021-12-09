@@ -204,6 +204,24 @@ window.addEventListener('DOMContentLoaded', () =>{
             }
         }
     }
+    function nextDay(){
+        if (day == 0){
+            title[0].classList.add('nextDay');
+        }
+        if (day == 1){
+            title[1].classList.add('nextDay');
+        }
+        if (day == 2){
+            title[2].classList.add('nextDay');
+        }
+        if (day == 3){
+            title[3].classList.add('nextDay');
+        }
+        if (day == 4){
+            title[4].classList.add('nextDay');
+        }
+    }
+    nextDay();
     changeLessonStatus();
     changeTimeColor();
     boxShadow();
