@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 lesson.textContent = 'Перемена';
             }
             if (hours == 13 && minute >= 40 || hours >= 14 && minute >= 0 || hours < 8){
-                lesson.style.color = '#008B8B';
+                lesson.style.color = 'rgb(83 159 213)';
                 lesson.textContent = 'Внешкольное время';
             }
         }

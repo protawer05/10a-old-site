@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>10A</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -109,6 +110,13 @@
             </section>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src='js/snowfall.js'></script>
+    <script src="js/snowfall.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).snowfall({image :"img/snow4.png", minSize: 10, maxSize:20, minSpeed: 0.4 ,flakeCount: 30});
+        });
+    </script>
 </body>
 </html>
