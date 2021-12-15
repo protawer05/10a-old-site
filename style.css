@@ -1,12 +1,15 @@
+html, body{
+    height: 100%;
+}
 body{
+    background: linear-gradient(90deg, #2C3E50, #FD746C) center;
     margin: 0;
-    padding: 0;
-    background-image: url(/img/background.jpg);
     color: #fff;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
 }
+
 .wrapper{
     max-width: 822px;
     margin: 0 auto;
@@ -36,18 +39,19 @@ body{
     font-size: 36px;
     line-height: 49px;
     text-align: center;
-    color: rgb(172, 48, 48);
+    color: rgb(83, 85, 218);
     position: relative;
 }
 .item__title-zvonki{
     font-size: 36px;
     line-height: 49px;
     text-align: center;
-    color: rgb(0, 255, 119);
+    color: rgb(28, 106, 158);
 }
 .item__column {
     background: rgba(255, 255, 255, 0.13);
     border-radius: 50px;
+    box-shadow: 10px 5px 5px rgb(78 44 44 / 19%);
 }
 .column__list {
     list-style-type: none;
@@ -109,7 +113,7 @@ body{
     border-radius: 10px;
 }
 .red{
-    color: red;
+    color: rgb(255 104 104);
     border: 1px solid red;
     border-radius: 10px;
 }
@@ -118,10 +122,18 @@ body{
     font-size: 40px;
     margin-bottom: 20px;
     padding-bottom: 30px;
-    color: rgb(192, 19, 19);
+    color: rgb(255 66 66);
     border-bottom: 3px dashed rgba(10, 189, 202, 0.384);
+    position: relative;
+}
+.lesson::before{
+    content:'Сейчас:';
+    font-size: 20px;
+    margin-right: 10px;
+    color:#FD746C;
+    position: absolute;
+    top: -12px;
 }
 .italic{
     font-style: italic;
-    
 }

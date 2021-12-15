@@ -175,28 +175,28 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
         if (day != 6 && day != 0){
             if (hours == 8 && minute >= 40 && minute < 45 ){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = 'rgb(255 249 53)';
+                lesson.textContent = 'Перемена';
             }
             if (hours == 9 && minute >= 25 && minute < 40 ){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = 'rgb(255 249 53)';
+                lesson.textContent = 'Перемена';
             }
             if (hours == 10 && minute >= 20 && minute < 30 ){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = 'rgb(255 249 53)';
+                lesson.textContent = 'Перемена';
             }
             if (hours == 11 && minute >= 10 && minute < 20 ){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = 'rgb(255 249 53)';
+                lesson.textContent = 'Перемена';
             }
             if (hours == 12 && minute >= 0 && minute < 10 ){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = 'rgb(255 249 53)';
+                lesson.textContent = 'Перемена';
             }
             if (hours == 12 && minute >= 50 && minute < 60 ){
-                lesson.style.color = 'rgb(23, 151, 0)';
-                lesson.textContent = 'Сейчас перемена';
+                lesson.style.color = 'rgb(255 249 53)';
+                lesson.textContent = 'Перемена';
             }
             if (hours == 13 && minute >= 40 || hours >= 14 && minute >= 0 || hours < 8){
                 lesson.style.color = '#008B8B';
