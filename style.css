@@ -2,12 +2,26 @@ html, body{
     height: 100%;
 }
 body{
-    background: linear-gradient(90deg, #2C3E50, #FD746C) center;
+    background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+    position: relative;
     margin: 0;
     color: #fff;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .wrapper{
@@ -23,7 +37,7 @@ body{
     margin-bottom: 50px;
     border-radius: 5px;
     border-bottom: 3px solid white;
-    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    background: url(img/title-animation.png) repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
