@@ -114,9 +114,11 @@
     <script src='js/snowfall.js'></script>
     <script src="js/snowfall.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        if (window.screen.width > 600){
+            $(document).ready(function(){
             $(document).snowfall({image :"img/snow4.png", minSize: 10, maxSize:20, minSpeed: 0.4 ,flakeCount: 30});
         });
+        }
     </script>
 </body>
 </html>

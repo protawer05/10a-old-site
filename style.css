@@ -2,8 +2,8 @@ html, body{
     height: 100%;
 }
 body{
-    background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-    background-size: 400% 400%;
+    background: linear-gradient(90deg, #135872 , #5fc3e4 , #045766);
+    background-size: 200% 200%;
     animation: change 10s ease-in-out infinite;
     position: relative;
     margin: 0;
