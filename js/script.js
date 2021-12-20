@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () =>{
           day = date.getDay(),
           hours = date.getHours(),
           minute = date.getMinutes(),
+          seconds = date.getSeconds(),
           title = document.querySelectorAll('.item__title'),
           monday = document.querySelectorAll('.monday'),
           tuesday = document.querySelectorAll('.tuesday'),
@@ -33,118 +34,69 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
     }
     function changeTimeColor() {
+        function addClassSix(day){
+            if (hours == 8 && minute >= 0 && minute < 40 ){
+                day[0].classList.add('green');
+            }
+            if (hours == 8 && minute >= 45 || hours == 9 && minute < 25 ){
+                day[1].classList.add('green');
+            }
+            if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
+                day[2].classList.add('green');
+            }
+            if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
+                day[3].classList.add('green');
+            }
+            if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
+                day[4].classList.add('green');
+            }
+            if (hours == 12 && minute >= 10 && minute < 50 ){
+                day[5].classList.add('green');
+            }
+        }
+        function addClassSeven(day){
+            if (hours == 8 && minute >= 0 && minute < 40 ){
+                day[0].classList.add('green');
+            }
+            if (hours == 8 && minute >= 45 || hours == 9 && minute < 25 ){
+                day[1].classList.add('green');
+            }
+            if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
+                day[2].classList.add('green');
+            }
+            if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
+                day[3].classList.add('green');
+            }
+            if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
+                day[4].classList.add('green');
+            }
+            if (hours == 12 && minute >= 10 && minute < 50 ){
+                day[5].classList.add('green');
+            }
+            if (hours == 13 && minute >= 0 && minute < 40 ){
+                day[6].classList.add('green');
+            }
+        }
         if (day != 6 && day != 0) {
             if (day == 1){
                 title[0].classList.add('green', 'italic');
-                if (hours == 8 && minute >= 0 && minute < 40 ){
-                    monday[0].classList.add('green');
-                }
-                if (hours == 8 && minute >= 45 || hours == 9 && minute < 25 ){
-                    monday[1].classList.add('green');
-                }
-                if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
-                    monday[2].classList.add('green');
-                }
-                if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
-                    monday[3].classList.add('green');
-                }
-                if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
-                    monday[4].classList.add('green');
-                }
-                if (hours == 12 && minute >= 10 && minute < 50 ){
-                    monday[5].classList.add('green');
-                }
+                addClassSix(monday);
             }
             if (day == 2){
                 title[1].classList.add('green', 'italic');
-                if (hours == 8 && minute >= 0 && minute < 40 ){
-                    tuesday[0].classList.add('green');
-                }
-                if (hours == 8 && minute >= 45 || hours == 9 && minute < 25 ){
-                    tuesday[1].classList.add('green');
-                }
-                if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
-                    tuesday[2].classList.add('green');
-                }
-                if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
-                    tuesday[3].classList.add('green');
-                }
-                if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
-                    tuesday[4].classList.add('green');
-                }
-                if (hours == 12 && minute >= 10 && minute < 50 ){
-                    tuesday[5].classList.add('green');
-                }
-                if (hours == 13 && minute >= 0 && minute < 40 ){
-                    tuesday[6].classList.add('green');
-                }
+                addClassSeven(tuesday);
             }
             if (day == 3){
                 title[2].classList.add('green', 'italic');
-                
-            if (hours == 8 && minute >= 0 && minute < 40 ){
-                wednesday[0].classList.add('green');
-            }
-            if (hours == 8 && minute >= 45 || hours == 9 && minute < 25 ){
-                wednesday[1].classList.add('green');
-            }
-            if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
-                wednesday[2].classList.add('green');
-            }
-            if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
-                wednesday[3].classList.add('green');
-            }
-            if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
-                wednesday[4].classList.add('green');
-            }
-            if (hours == 12 && minute >= 10 && minute < 50 ){
-                wednesday[5].classList.add('green');
-            }
+               addClassSix(wednesday);
             }
             if (day == 4){
                 title[3].classList.add('green','italic');
-                if (hours == 8 && minute >= 0 && minute < 40 ){
-                    thursday[0].classList.add('green');
-                }
-                if (hours == 8 && minute >= 45 || hours == 9 && minute < 25 ){
-                    thursday[1].classList.add('green');
-                }
-                if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
-                    thursday[2].classList.add('green');
-                }
-                if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
-                    thursday[3].classList.add('green');
-                }
-                if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
-                    thursday[4].classList.add('green');
-                }
-                if (hours == 12 && minute >= 10 && minute < 50 ){
-                    thursday[5].classList.add('green');
-                }
-                if (hours == 13 && minute >= 0 && minute < 40 ){
-                    thursday[6].classList.add('green');
-                }
+                addClassSeven(thursday);
             }
             if (day == 5){
                 title[4].classList.add('green','italic');
-                if (hours == 8 && minute >= 0 && minute < 40 ){
-                    friday[0].classList.add('green');
-                }
-                if (hours == 8 && minute >= 45 || hours == 9 && minute <=25 ){
-                    friday[1].classList.add('green');
-                }
-                if (hours == 9 && minute >= 40 || hours == 10 && minute < 20 ){
-                    friday[2].classList.add('green');
-                }
-                if (hours == 10 && minute >= 30 || hours == 11 && minute < 10 ){
-                    friday[3].classList.add('green');
-                }
-                if (hours == 11 && minute >= 20 || hours == 12 && minute < 0 ){
-                    friday[4].classList.add('green');
-                }
-                if (hours == 12 && minute >= 10 && minute < 50 ){
-                    friday[5].classList.add('green');
-                }
+                addClassSix(friday);
             }
             if (hours == 8 && minute > 0 && minute < 40 ){
                 zvonki[0].classList.add('red');
@@ -221,6 +173,87 @@ window.addEventListener('DOMContentLoaded', () =>{
             title[4].classList.add('nextDay');
         }
     }
+   
+    /************************************TIMER ************************/
+    
+          let timeMonday = 12 * 3600 + 50 * 60,
+          timeTuesday  = 13 * 3600 + 40 * 60,
+          timeWednesday = 12 * 3600 + 50 * 60,
+          timeThursday = 13 * 3600 + 40 * 60,
+          timeFriday = 12 * 3600 + 50 * 60;
+          const timerHours = document.querySelector('.timer-hours'),
+          timerMinutes = document.querySelector('.timer-minutes'),
+          timerSeconds = document.querySelector('.timer-seconds');
+    
+    function getZero(num){
+        if (num >= 0 && num < 10) { 
+            return '0' + num;
+        } else {
+            return num;
+        }
+    }
+    function getTimeRemaining(endtime) {
+        let date = new Date(),
+            hou = date.getHours(),
+            min = date.getMinutes(),
+            sec = date.getSeconds(),
+            timeNowSeconds = (hou * 3600) + (min * 60) + sec;
+        const t = endtime - timeNowSeconds,
+            hours = Math.floor(t / 3600),
+            minutes = Math.floor(t / 60) % 60,
+            seconds = (t) % 60;
+            
+            return {
+                'total':t,
+                'hours':hours,
+                'minutes':minutes,
+                'seconds':seconds
+            };
+    }
+    
+    function setClock(endtime){
+        const timeInterval = setInterval(updateClock, 1000);
+
+          updateClock();
+
+          function updateClock(){
+              const t = getTimeRemaining(endtime);
+
+              timerHours.textContent = getZero(t.hours);
+              timerMinutes.textContent = getZero(t.minutes);
+              timerSeconds.textContent = getZero(t.seconds);
+
+              if (t.total <= 0){
+                  clearInterval(timeInterval);
+              }
+          }
+    }
+
+    if (day == 1){
+        setClock(timeMonday);
+    }
+    if (day == 2){
+        setClock(timeTuesday);
+    }
+    if (day == 3){
+        setClock(timeWednesday);
+    }
+    if (day == 4){
+        setClock(timeThursday);
+    }
+    if (day == 5){
+        setClock(timeFriday);
+    }
+    function hideTimer(){
+        if (day == 6 || day == 0 || hours < 8 || 
+            ((day == 2 || day == 4) && (hours == 13 && minute >= 40)) ||
+            ((day == 1 || day == 3 || day == 5) && (hours == 12 && minute >= 50 || hours >= 13 && minute >= 0)) ||
+             (hours >= 14)){
+            document.querySelector('.timer').style.display = 'none';
+        }
+    }
+
+    hideTimer();
     nextDay();
     changeLessonStatus();
     changeTimeColor();

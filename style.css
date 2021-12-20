@@ -41,15 +41,17 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
+    animation: aitf 80s linear infinite;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
 }
-@-webkit-keyframes aitf {
+@keyframes aitf {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
   }
-
+.timetable{
+    margin: 0 0 30px 0;
+}
 .timetable__top {
     display: flex;
     justify-content: space-between;
@@ -62,14 +64,14 @@ body{
     font-size: 36px;
     line-height: 49px;
     text-align: center;
-    color: rgb(83, 85, 218);
+    color: rgb(238, 255, 0);
     position: relative;
 }
 .item__title-zvonki{
     font-size: 36px;
     line-height: 49px;
     text-align: center;
-    color: rgb(28, 106, 158);
+    color: rgb(230, 255, 90);
 }
 .item__column {
     background: rgba(255, 255, 255, 0.13);
@@ -94,7 +96,7 @@ body{
     left: 50%;
     top: 60%;
     font-size: 13px;
-    color: rgba(11, 21, 167, 0.76);
+    color: rgba(144, 235, 39, 0.76);
 }
 
 .list__item {
@@ -108,13 +110,13 @@ body{
     padding-bottom: 10px;
 }
 .green{
-    color:rgb(116, 200, 5);
-    border: 1px solid green;
+    color:rgb(5, 253, 241);
+    border: 1px solid rgb(112, 242, 251);
     border-radius: 10px;
 }
 .red{
-    color: rgb(255 104 104);
-    border: 1px solid red;
+    color: rgb(201, 255, 23);
+    border: 1px solid rgb(30, 221, 205);
     border-radius: 10px;
 }
 .lesson{
@@ -136,6 +138,70 @@ body{
 }
 .italic{
     font-style: italic;
+}
+/********************************************Timer*********************************/
+
+.timer__container {
+    margin: 0 auto;
+    max-width: 350px;
+}
+.timer__body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+.timer__body span{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.timer__body::after{
+    content:'До конца учебного дня';
+    position: absolute;
+    font-size: 15px;
+    left: 25%;
+    top: -3%;
+}
+.timer-hours {
+    padding-left: 15px;
+    position: relative;
+}
+.timer-minutes{
+    position: relative;
+}
+.timer-seconds {
+    padding-right: 15px;
+    position: relative;
+}
+.timer-hours::before{
+    content: 'Часа';
+    font-size: 15px;
+    position: absolute;
+    left: 35%;
+    top: -5%;
+    margin-top: -5px;
+}
+.timer-minutes::before{
+    content: 'Минут';
+    font-size: 15px;
+    position: absolute;
+    left: 10%;
+    top: -5%;
+    margin-top: -5px;
+}
+.timer-seconds::before{
+    content: 'Секунд';
+    font-size: 15px;
+    position: absolute;
+    top: -5%;
+    margin-top: -5px;
+}
+
+.time{
+    font-size: 50px;
 }
 /***************************************media-query////////////////////////////////////////*/
 @media(max-width: 852px){

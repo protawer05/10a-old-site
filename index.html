@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="imgage/png" href="/img/icon.png">
+    <link rel="icon" type="image/png" href="/img/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>10A</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -109,15 +108,17 @@
             </section>
         </main>
     </div>
+    <div class="timer">
+        <div class="timer__container">
+            <div class="timer__body">
+                <div class="timer-hours time">00</div>
+                <span>:</span>
+                <div class="timer-minutes time">00</div>
+                <span>:</span>
+                <div class="timer-seconds time">00</div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
-    <script src='js/snowfall.js'></script>
-    <script src="js/snowfall.js"></script>
-    <script type="text/javascript">
-        if (window.screen.width > 600){
-            $(document).ready(function(){
-            $(document).snowfall({image :"img/snow4.png", minSize: 10, maxSize:20, minSpeed: 0.4 ,flakeCount: 30});
-        });
-        }
-    </script>
 </body>
 </html>
