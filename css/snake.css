@@ -1,0 +1,19 @@
+canvas{
+    padding-top: 7%;
+    display: block;
+    margin: 0 auto;
+}
+body{
+    background-color: #111;
+    position: relative;
+}
+.returnback{
+    position: absolute;
+    margin-left: 45.5%;
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+}
+.returnback:hover{
+    color: red;
+}

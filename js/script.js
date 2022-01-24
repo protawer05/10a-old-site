@@ -18,19 +18,19 @@ window.addEventListener('DOMContentLoaded', () =>{
 
     function boxShadow(){
         if (day == 1){
-            columns[1].style.boxShadow ='1px 3px 3px 4px #98FF98';
+            columns[1].style.boxShadow ='1px 3px 3px 4px cyan';
         }
         if (day == 2){
-            columns[2].style.boxShadow ='1px 3px 3px 4px #98FF98';
+            columns[2].style.boxShadow ='1px 3px 3px 4px cyan';
         }
         if (day == 3){
-            columns[3].style.boxShadow ='1px 3px 3px 4px #98FF98';
+            columns[3].style.boxShadow ='1px 3px 3px 4px cyan';
         }
         if (day == 4){
-            columns[4].style.boxShadow ='1px 3px 3px 4px #98FF98';
+            columns[4].style.boxShadow ='1px 3px 3px 4px cyan';
         }
         if (day == 5){
-            columns[5].style.boxShadow ='1px 3px 3px 4px #98FF98';
+            columns[5].style.boxShadow ='1px 3px 3px 4px cyan';
         }
     }
     function changeTimeColor() {
