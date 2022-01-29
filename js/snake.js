@@ -35,6 +35,14 @@ function direction(event) {
 		dir = "right";
 	else if(event.keyCode == 40 && dir != "up")
 		dir = "down";
+		if(event.keyCode == 65 && dir != "right")
+		dir = "left";
+	else if(event.keyCode == 87 && dir != "down")
+		dir = "up";
+	else if(event.keyCode == 68 && dir != "left")
+		dir = "right";
+	else if(event.keyCode == 83 && dir != "up")
+		dir = "down";
 }
 
 function eatTail(head, arr) {
