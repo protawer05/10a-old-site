@@ -17,3 +17,25 @@ body{
 .returnback:hover{
     color: red;
 }
+.snake__container {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 68%;
+    top: 40%;
+}
+.snake__title {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.snake__buttons {
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+}
+.snake__button:hover {
+    color: red;
+    cursor: pointer;
+}

@@ -98,3 +98,38 @@ function drawGame() {
 }
 
 let game = setInterval(drawGame, 100);
+
+let buttons = document.querySelectorAll('.snake__button');
+
+buttons[0].addEventListener('click', () =>{
+	clearInterval(game);
+	game = setInterval(drawGame, 160);
+});
+buttons[1].addEventListener('click', () =>{
+	clearInterval(game);
+	game = setInterval(drawGame, 125);
+});
+buttons[2].addEventListener('click', () =>{
+	clearInterval(game);
+	game = setInterval(drawGame, 95);
+});
+buttons[3].addEventListener('click', () =>{
+	clearInterval(game);
+	game = setInterval(drawGame, 60);
+});
+function changeSpeedByKey(event){
+	if(event.keyCode == 49){
+		clearInterval(game);
+		game = setInterval(drawGame, 160);
+	} else if (event.keyCode == 50){
+		clearInterval(game);
+		game = setInterval(drawGame, 125);
+	} else if(event.keyCode == 51){
+		clearInterval(game);
+		game = setInterval(drawGame, 95);
+	} else if(event.keyCode == 52){
+		clearInterval(game);
+		game = setInterval(drawGame, 60);
+	}
+}
+document.addEventListener("keydown", changeSpeedByKey);
