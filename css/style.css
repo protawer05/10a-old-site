@@ -271,7 +271,6 @@ body{
 /*************************************modal-list************************************/
 
 .modal{
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -280,11 +279,26 @@ body{
     overflow: hidden;
     z-index: 777;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.modal:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modal:target .modal__body{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 .modal__open{
     position: absolute;
     left: 30%;
     top: 7%;
+    text-decoration: none;
+    color: #fff;
 }
 .modal__body{
     margin-top: 5%;
@@ -295,17 +309,23 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 20px;
+    transform: translate(0px, -100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
+
 .modal__open:hover{
     color: red;
     cursor: pointer;
 }
+
 .modal__close{
     font-size: 30px;
     margin-top: -35px;
     position: relative;
     color: red;
     cursor: pointer;
+    text-decoration: none;
 }
 .modal__item{
     list-style-type: none;

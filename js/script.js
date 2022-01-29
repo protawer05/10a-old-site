@@ -434,19 +434,7 @@ window.addEventListener('DOMContentLoaded', () =>{
 
 /********************************Modal******************************** */
 
-       let modalOpen = document.querySelector('.modal__open'),
-            modalClose = document.querySelector('.modal__close'),
-            modal = document.querySelector('.modal'),
-            modalBody = document.querySelector('.modal__body');
 
-        
-       modalOpen.addEventListener('click', ()=>{
-        modal.classList.toggle('block');
-
-       });
-       modalClose.addEventListener('click', ()=>{
-        modal.classList.toggle('block');
-       });
 /****************************************************************** */
     hideTimerTwo();
     hideTimer();
