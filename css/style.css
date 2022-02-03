@@ -2,16 +2,21 @@ html, body{
     height: 100%;
 }
 body{
-    background: url(/img/prism.png);
-    animation: change 10s ease-in-out infinite;
     position: relative;
     margin: 0;
-    color: #fff;
+    color: cyan;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
 }
-
+#myVideo {
+    transform: scale(1.25);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 @keyframes change {
     0%{
         background-position: 0 50%;
@@ -25,6 +30,7 @@ body{
 }
 
 .wrapper{
+    position: relative;
     max-width: 822px;
     margin: 0 auto;
     padding: 0 15px;
@@ -37,7 +43,7 @@ body{
     text-align: center;
     margin-bottom: 50px;
     border-radius: 5px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #00FFFF;
     background: url(/img/title-animation.png) repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
@@ -71,14 +77,14 @@ body{
     font-size: 36px;
     line-height: 49px;
     text-align: center;
-    color: rgb(238, 255, 0);
+    color: rgb(0, 255, 157);
     position: relative;
 }
 .item__title-zvonki{
     font-size: 36px;
     line-height: 49px;
     text-align: center;
-    color: rgb(230, 255, 90);
+    color: rgb(0, 255, 157);
 }
 .item__column {
     background: rgba(255, 255, 255, 0.13);
@@ -103,7 +109,7 @@ body{
     left: 50%;
     top: 60%;
     font-size: 13px;
-    color: rgba(144, 235, 39, 0.76);
+    color: #FF00FF;
 }
 
 .list__item {
@@ -117,13 +123,13 @@ body{
     padding-bottom: 10px;
 }
 .green{
-    color:rgb(5, 253, 241);
-    border: 1px solid rgb(112, 242, 251);
+    color:#FF00FF;
+    border: 1px solid #FF00FF;
     border-radius: 10px;
 }
 .red{
-    color: rgb(201, 255, 23);
-    border: 1px solid rgb(30, 221, 205);
+    color: #FF00FF;
+    border: 1px solid #FF00FF;
     border-radius: 10px;
 }
 .lesson{
@@ -131,7 +137,7 @@ body{
     font-size: 40px;
     margin-bottom: 20px;
     padding-bottom: 30px;
-    color: rgb(255 66 66);
+    color: #00FFFF;
     border-bottom: 3px dashed rgb(71 199 221 / 80%);
     position: relative;
 }
@@ -139,7 +145,7 @@ body{
     content:'Сейчас:';
     font-size: 20px;
     margin-right: 10px;
-    color:#FD746C;
+    color: cyan;
     position: absolute;
     top: -12px;
 }
@@ -250,7 +256,7 @@ body{
     content:"До конца урока";
     position: absolute;
     font-size: 15px;
-    color: red;
+    color: cyan;
     left: 29%;
     top: -3%;
 }
@@ -258,7 +264,7 @@ body{
     content:"До конца перемены";
     position: absolute;
     font-size: 15px;
-    color: rgb(18, 231, 18);
+    color: cyan;
     left: 24%;
     top: -3%;
 }
@@ -295,10 +301,10 @@ body{
 }
 .modal__open{
     position: absolute;
-    left: 30%;
-    top: 7%;
+    left: 12%;
+    top: 6%;
     text-decoration: none;
-    color: #fff;
+    color: #FF00FF;
 }
 .modal__body{
     margin-top: 5%;
@@ -315,7 +321,7 @@ body{
 }
 
 .modal__open:hover{
-    color: red;
+    color: cyan;
     cursor: pointer;
 }
 
@@ -363,6 +369,14 @@ body{
     display: block;
 }
 /***************************************media-query////////////////////////////////////////*/
+@media(max-width: 1400px){
+    body{
+        background: #000;
+    }    
+    #myVideo{
+        display: none;
+    }
+}
 @media(max-height: 809px){
     .modal__open{
         top: 9%;
@@ -462,6 +476,7 @@ body{
     }
     .modal__open{
         left: 5%;
+        top: 2%;
     }
     .modal__body{
         margin-left: 28%;

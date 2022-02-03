@@ -18,19 +18,19 @@ window.addEventListener('DOMContentLoaded', () =>{
 
     function boxShadow(){
         if (day == 1){
-            columns[1].style.boxShadow ='1px 3px 3px 4px cyan';
+            columns[1].style.boxShadow ='1px 3px 3px 4px #FF00FF';
         }
         if (day == 2){
-            columns[2].style.boxShadow ='1px 3px 3px 4px cyan';
+            columns[2].style.boxShadow ='1px 3px 3px 4px #FF00FF';
         }
         if (day == 3){
-            columns[3].style.boxShadow ='1px 3px 3px 4px cyan';
+            columns[3].style.boxShadow ='1px 3px 3px 4px #FF00FF';
         }
         if (day == 4){
-            columns[4].style.boxShadow ='1px 3px 3px 4px cyan';
+            columns[4].style.boxShadow ='1px 3px 3px 4px #FF00FF';
         }
         if (day == 5){
-            columns[5].style.boxShadow ='1px 3px 3px 4px cyan';
+            columns[5].style.boxShadow ='1px 3px 3px 4px #FF00FF';
         }
     }
     function changeTimeColor() {
@@ -127,31 +127,31 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
         if (day != 6 && day != 0){
             if (hours == 8 && minute >= 40 && minute < 45 ){
-                lesson.style.color = 'rgb(255 249 53)';
+                lesson.style.color = 'cyan';
                 lesson.textContent = 'Перемена';
             }
             if (hours == 9 && minute >= 25 && minute < 40 ){
-                lesson.style.color = 'rgb(255 249 53)';
+                lesson.style.color = 'cyan';
                 lesson.textContent = 'Перемена';
             }
             if (hours == 10 && minute >= 20 && minute < 30 ){
-                lesson.style.color = 'rgb(255 249 53)';
+                lesson.style.color = 'cyan';
                 lesson.textContent = 'Перемена';
             }
             if (hours == 11 && minute >= 10 && minute < 20 ){
-                lesson.style.color = 'rgb(255 249 53)';
+                lesson.style.color = 'cyan';
                 lesson.textContent = 'Перемена';
             }
             if (hours == 12 && minute >= 0 && minute < 10 ){
-                lesson.style.color = 'rgb(255 249 53)';
+                lesson.style.color = 'cyan';
                 lesson.textContent = 'Перемена';
             }
             if (hours == 12 && minute >= 50 && minute < 60 ){
-                lesson.style.color = 'rgb(255 249 53)';
+                lesson.style.color = 'cyan';
                 lesson.textContent = 'Перемена';
             }
             if (hours == 13 && minute >= 40 || hours >= 14 && minute >= 0 || hours < 8){
-                lesson.style.color = 'rgb(0 149 255)';
+                lesson.style.color = '#00FFFF';
                 lesson.textContent = 'Внешкольное время';
             }
         }
@@ -432,8 +432,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 }
             }
 
-/********************************Modal******************************** */
-
+/********************************changeColor******************************** */
 
 /****************************************************************** */
     hideTimerTwo();
