@@ -225,10 +225,13 @@ window.addEventListener('DOMContentLoaded', () =>{
 
               if (t.total <= 0){
                   clearInterval(timeInterval);
+
               }
           }
     }
+    
 
+    
     if (day == 1){
         setClock(timeMonday);
     }
@@ -284,6 +287,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     
                         if (t.total <= 0){
                             clearInterval(timeInterval);
+                            location.reload();
                         }
                     }
             }
@@ -432,7 +436,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                 }
             }
 
-/********************************changeColor******************************** */
+/********************************Modal******************************** */
 
 /****************************************************************** */
     hideTimerTwo();
