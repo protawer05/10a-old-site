@@ -8,14 +8,8 @@ body{
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-}
-#myVideo {
-    transform: scale(1.25);
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    background: url(/img/background.png);
+    animation: change 30s ease infinite;
 }
 @keyframes change {
     0%{
@@ -109,7 +103,7 @@ body{
     left: 50%;
     top: 60%;
     font-size: 13px;
-    color: #FF00FF;
+    color: #EDAE01;
 }
 
 .list__item {
@@ -123,13 +117,13 @@ body{
     padding-bottom: 10px;
 }
 .green{
-    color:#FF00FF;
-    border: 1px solid #FF00FF;
+    color:gold;
+    border: 1px solid #EDAE01;
     border-radius: 10px;
 }
 .red{
-    color: #FF00FF;
-    border: 1px solid #FF00FF;
+    color: gold;
+    border: 1px solid #EDAE01;
     border-radius: 10px;
 }
 .lesson{
@@ -138,7 +132,7 @@ body{
     margin-bottom: 20px;
     padding-bottom: 30px;
     color: #00FFFF;
-    border-bottom: 3px dashed rgb(71 199 221 / 80%);
+    border-bottom: 3px dashed #7F152E;
     position: relative;
 }
 .lesson::before{
@@ -303,7 +297,7 @@ body{
     position: relative;
     display: block;
     text-decoration: none;
-    color: #FF00FF;
+    color: #EDAE01;
     margin-top: -50px;
     margin-bottom: 10px;
     max-width: 200px;
@@ -371,15 +365,6 @@ body{
     display: block;
 }
 /***************************************media-query////////////////////////////////////////*/
-@media(max-width: 1400px){
-    body{
-        background: #000;
-    }    
-    #myVideo{
-        display: none;
-    }
-}
-
 
 @media(max-width: 1752px){
     .timers{

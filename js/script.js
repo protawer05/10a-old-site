@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', () =>{
           day = date.getDay(),
           hours = date.getHours(),
           minute = date.getMinutes(),
-          seconds = date.getSeconds(),
           title = document.querySelectorAll('.item__title'),
           monday = document.querySelectorAll('.monday'),
           tuesday = document.querySelectorAll('.tuesday'),
@@ -18,19 +17,19 @@ window.addEventListener('DOMContentLoaded', () =>{
 
     function boxShadow(){
         if (day == 1){
-            columns[1].style.boxShadow ='1px 3px 3px 4px #FF00FF';
+            columns[1].style.boxShadow ='1px 3px 3px 4px gold';
         }
         if (day == 2){
-            columns[2].style.boxShadow ='1px 3px 3px 4px #FF00FF';
+            columns[2].style.boxShadow ='1px 3px 3px 4px gold';
         }
         if (day == 3){
-            columns[3].style.boxShadow ='1px 3px 3px 4px #FF00FF';
+            columns[3].style.boxShadow ='1px 3px 3px 4px gold';
         }
         if (day == 4){
-            columns[4].style.boxShadow ='1px 3px 3px 4px #FF00FF';
+            columns[4].style.boxShadow ='1px 3px 3px 4px gold';
         }
         if (day == 5){
-            columns[5].style.boxShadow ='1px 3px 3px 4px #FF00FF';
+            columns[5].style.boxShadow ='1px 3px 3px 4px gold';
         }
     }
     function changeTimeColor() {
