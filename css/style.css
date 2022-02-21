@@ -300,11 +300,13 @@ body{
     opacity: 1;
 }
 .modal__open{
-    position: absolute;
-    left: 12%;
-    top: 6%;
+    position: relative;
+    display: block;
     text-decoration: none;
     color: #FF00FF;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    max-width: 200px;
 }
 .modal__body{
     margin-top: 5%;
@@ -377,26 +379,8 @@ body{
         display: none;
     }
 }
-@media(max-height: 809px){
-    .modal__open{
-        top: 9%;
-    }
-}
-@media(max-height: 704px){
-    .modal__open{
-        top: 10%;
-    }
-}
-@media(max-height: 618px){
-    .modal__open{
-        top: 11%;
-    }
-}
-@media(max-height: 552px){
-    .modal__open{
-        top: 12%;
-    }
-}
+
+
 @media(max-width: 1752px){
     .timers{
         padding: 0 500px;
@@ -405,9 +389,6 @@ body{
 @media(max-width: 1680px){
     .timers{
         padding: 0 450px;
-    }
-    .modal__open{
-        left: 25%;
     }
     .modal__body{
         margin-left: 36%;
@@ -421,9 +402,6 @@ body{
 @media(max-width: 1468px){
     .timers{
         padding: 0 350px;
-    }
-    .modal__open{
-        left: 20%;
     }
 }
 @media(max-width: 1368px){
@@ -446,9 +424,6 @@ body{
     .timers{
         padding: 0 200px;
     }
-    .modal__open{
-        left: 15%;
-    }
 }
 @media(max-width: 1050px){
     .timers{
@@ -466,17 +441,10 @@ body{
     .timers{
         padding: 0 100px;
     }
-    .modal__open{
-        left: 10%;
-    }
 }
 @media(max-width: 852px){
     .timers{
         padding: 0 50px;
-    }
-    .modal__open{
-        left: 5%;
-        top: 2%;
     }
     .modal__body{
         margin-left: 28%;
