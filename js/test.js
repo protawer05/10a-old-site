@@ -6,4 +6,3 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     localStorage.setItem(text.value, true);
 });
-localStorage.clear()
