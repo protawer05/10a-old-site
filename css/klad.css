@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.game__title{
+    color: #fff;
+    margin-top: 40px;
+}
+.game{
+}
+.game-wrapper{
+    margin-top: 30px;
+    width: 800px;
+    height: 800px;
+    border: 5px solid #fff;
+    background-color: orange;
+}
+.game__row{
+    display: flex;
+}
+.game__item{
+    width: 155px;
+    height: 155px;
+    border: 3px solid #fff;
+    background-color: yellow;
+}
+.difficult__item{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.difficult__item:hover{
+    color: red;
+}
+.difficult{
+    position: absolute;
+    text-align: center;
+    border: 3px solid #fff;
+    background-color: #000;
+    left: 43%;
+    top: 41%;
+}
+.difficult__title{
+    font-size: 32px;
+    color: #fff;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+}
+.active__class-win{
+    background: url(/img/klad.png) center center no-repeat;
+   
+}
+.active__class-lose{
+    background: url(/img/bomba.png) center center no-repeat;
+}
+.active__class-neutral{
+    background-color: cyan;
+    position: relative;
+}
+.active__class-neutral::after{
+    content: 'Пусто';
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    font-size: 30px;
+}
+.lose__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.lose__text {
+    font-size: 23px;
+    
+}
+.lose__text-wrapper{
+    margin-bottom: 60px;
+}
+.reloadPage {
+    width: 300px;
+    height: 75px;
+    background: #fff;
+}
+.reloadPage:hover{
+    background:red;
+    cursor: pointer;
+}
+.reloadPage img{
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+.lose-window{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    left: 42%;
+    top: 35%;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+.tryCount{
+    color: #fff;;
+}
