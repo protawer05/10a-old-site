@@ -1,0 +1,23 @@
+.form__wrapper{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+.form{
+    text-align: center;
+    border: 3px solid #000;
+}
+.form__title{
+    font-size: 30px;
+}
+.form__input{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 30px;
+    margin-top: 15px;
+    background-color: #fff;
+}
