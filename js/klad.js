@@ -12,6 +12,7 @@ difficultInput.forEach(elem => {
           document.querySelector('.difficult').style.display = 'none';
           bombsCount = difficult;
           loseCount = (bombsCount / 2);
+          document.querySelector('.tryCount').textContent = `Осталось попыток: ${Math.round(loseCount)}`;
           createBombs();
           
      });
@@ -79,6 +80,7 @@ function youWin(){
 function tryCount(){
     document.querySelector('.tryCount').textContent = `Осталось попыток ${Math.round(loseCount)}`;
 }
+
 
 
 
